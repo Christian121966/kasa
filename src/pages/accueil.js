@@ -1,9 +1,9 @@
 import React from "react";
-import './accueil.scss'
-import Header from '../../components/header/Header'
-import Banner from '../../components/banner/Banner'
-import Gallery from '../../components/gallery/Gallery'
-import Footer from '../../components/footer/Footer'
+import './Accueil.scss'
+import Header from '../components/header';
+import Banner from '../components/banner';
+import Gallery from '../components/gallery';
+import Footer from '../components/footer';
 
 function accueil() {
 	return (
