@@ -1,18 +1,17 @@
 
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Header from './components/header/Header';
-import Header from './components/header/Header'; // Correction de la casse pour correspondre au nom de fichier correct
-import Accueil from './pages/Accueil';
-import NotFound from './pages/NotFound';
+import Accueil from './pages/accueil/Accueil';
+import About from './pages/about/About';
+import NotFound from './pages/notFound/NotFound';
 import './App.css';
 function App() {
   return (
     <Router>
     <div className="App">
-      <Header />
       <Routes>
-        <Route path="/kasa/" element={Accueil} />
+        <Route path="/" element={<Accueil />} />
+        <Route path="/about" element={<About />} />
         <Route path='*' element={<NotFound />} />
       </Routes>
     </div>
