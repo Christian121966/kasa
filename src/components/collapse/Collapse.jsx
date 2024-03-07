@@ -1,32 +1,28 @@
 import React, { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAngleUp, faAngleDown } from '@fortawesome/free-solid-svg-icons';
 import './Collapse.scss';
-import arrow from '../../assets/arrow.png';
-//import { useState } from 'react';
+
 
 function Collapse({title, content}) {
     const [isOpen, setIsOpen] = useState(false);
 
-    const toggleCollapse = () => {
-      setIsOpen(!isOpen);
-    };
-
     return (
+
       <div className="collapse-container">
-        <button className="collapse-title" onClick={toggleCollapse}>
-          {title}
-          <img 
-                        className={isOpen ? 'arrow arrow_up' : 'arrow arrow_down'} 
-                        src={arrow} 
-                        alt="show content" 
-                    />
-        </button>
-        {isOpen && (
-          <div className="collapse-content">
+        <div className="collapse">
+          <h3 className="collapse-title" onClick={() => setIsOpen(!isOpen)}>
+            {title}
+            <FontAwesomeIcon icon={isOpen ? faAngleUp : faAngleDown} className='arrow' />
+          </h3>
+            {isOpen && (
+          <div className={isOpen ? "collapse-content" : "collapse-content-hidden"}>
             {Array.isArray(content) ? content.map((item, index) => (
               <p key={index}>{item}</p>
             )) : <p>{content}</p>}
           </div>
         )}
+        </div>
       </div>
     )
   }

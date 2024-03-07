@@ -1,55 +1,17 @@
-// src/pages/about/about.scss
-/*.about {
-    // Styles pour le conteneur principal de la page About
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 50px;
-  
-    &_main {
-      // Styles pour la section principale
-      width: 100%;
-      max-width: 800px; // Exemple de largeur maximale
-      margin-top: 20px;
-  
-      .collapse {
-        // Styles spécifiques pour les composants Collapse
-        margin-bottom: 15px;
-        background-color: #f0f0f0;
-        border-radius: 8px;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  
-        &-header {
-          // Styles pour l'en-tête du composant Collapse
-          padding: 10px 15px;
-          font-weight: bold;
-          cursor: pointer;
-        }
-  
-        &-content {
-          // Styles pour le contenu du composant Collapse
-          padding: 10px 15px;
-          line-height: 1.5;
-        }
-      }
-    }
-  }*/
-
-  //@import '../../sass/main.scss';
-
+@import '../../sass/utils/variables';
+ 
 .about{
     display: flex;
     flex-direction: column;
     min-height: calc(100vh - 40px);
 }
 
-.about_main{
-    width: 95%;
-    margin: 0 auto;
-    flex-grow: 1;
-    &_collapse{
-        margin: 40px auto;
-    }
+.about-main {
+  width: $main-width;
+  margin: $main-margin;
+  flex-grow: 1;
+
+  &_collapse {
+    margin: $collapse-margin;
+  }
 }
-  
-  // Vous pouvez également ajouter des styles spécifiques pour Header, Banner, et Footer si nécessaire

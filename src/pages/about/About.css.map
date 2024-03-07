@@ -1,1 +1,1 @@
-{"version":3,"sources":["About.css","About.scss"],"names":[],"mappings":"AAAA,gBAAgB;ACChB;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;IAAA;AAsCA;EACI,aAAA;EACA,sBAAA;EACA,8BAAA;ADFJ;;ACKA;EACI,UAAA;EACA,cAAA;EACA,YAAA;ADFJ;ACGI;EACI,iBAAA;ADDR","file":"About.css"}
+{"version":3,"sources":["About.scss","About.css","../../sass/utils/variables.scss"],"names":[],"mappings":"AAEA;EACI,aAAA;EACA,sBAAA;EACA,8BAAA;ACDJ;;ADIA;EACE,UEJW;EFKX,cEJY;EFKZ,YAAA;ACDF;ADGE;EACE,iBEPc;ADMlB","file":"About.css"}

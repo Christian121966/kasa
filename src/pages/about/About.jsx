@@ -34,16 +34,18 @@ const aboutDatas = [
 return (
     <div className='about'>
         <Header />
-        <Banner />
-        <main className='about_main'>
+        <Banner isVisible={true} showimage={true} />
+        <main className='about-main'>
             {aboutDatas.map(data => (
-                <Collapse key={data.id} title={data.title} content={data.content} />
+        <Collapse key={data.id} title={data.title} content={data.content} />
             ))}
         </main>
         <Footer />
+        <div className='about-footer'>
+            
+        </div>
     </div>
-
-    );
+    )
 }
 
 export default About;
