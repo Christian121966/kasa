@@ -1,33 +1,19 @@
-import React from 'react';
-import datas from '../../data/data';
+import './Gallery.scss'; 
+import datas from '../../data/Data'; 
+import Card from '../card/Card';
 
 function Gallery() {
   return (
-    <div>
-      {datas ? (
-        datas.map((data) => (
-          <div key={data.id}>
-            <img src={data.cover} alt={data.title} />
-            <h3>{data.title}</h3>
-            <p>{data.description}</p>
-            <p>Rating: {data.rating}</p>
-            <p>Location: {data.location}</p>
-            <ul>
-              {data.equipments.map((equipement, index) => (
-                <li key={index}>{equipement}</li>
-              ))}
-            </ul>
-            <ul>
-              {data.tags.map((tag, index) => (
-                <li key={index}>{tag}</li>
-              ))}
-            </ul>
-          </div>
-        ))
-      ) : (
-        <p>No data available</p>
-      )}
-    </div>
+    <main className='home_gallery'>
+      {datas.map((data) => (
+        <Card 
+          key={data.id}
+          id={data.id}
+          title={data.title}
+          cover={data.cover} 
+        />
+      ))}
+    </main>
   );
 }
 

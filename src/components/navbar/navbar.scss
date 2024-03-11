@@ -19,19 +19,20 @@
           font-style: normal;
           font-size: clamp(16px, 2.5vw, 24px); 
           text-decoration: none;
-          color: #000; // La couleur des liens est noire par défaut
+          color: #000; 
 
-          // Appliquez le style :hover à tous les liens, pas seulement à ceux actifs
+          
           &:hover {
-              color: #a61c33; // Change la couleur au survol pour tous les liens
+              color: #FD6060;
+              text-decoration: underline; 
           }
 
           &.active {
-              color: #000; // Couleur pour l'état actif
-              // Le style :hover est déjà défini au-dessus et s'appliquera également aux liens actifs
+              color: #000;
 
               &:hover {
-                color: #a61c33;
+                color: #FD6060;
+                text-decoration: underline;
               }
           }
       }

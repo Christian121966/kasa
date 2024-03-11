@@ -1,13 +1,14 @@
-import React from 'react';
+import './Card.scss'
+import { Link } from 'react-router-dom'
 
-function Card({ title, coverImage, onClick }) {
-    return (
-        <div className="card" onClick={onClick}>
-            <img src={coverImage} alt={title} />
-            <h3>{title}</h3>
-            <button>Voir les détails</button>
-        </div>
-    );
+function Card({id, title, cover}) {
+
+	return (
+		<Link to={`/ListingDetails/${id}`} className="gallery_card">
+			<img src={cover} alt={"Kasa -" + title} />
+			<h3>{title}</h3>	
+		</Link>
+	)
 }
 
 export default Card;
