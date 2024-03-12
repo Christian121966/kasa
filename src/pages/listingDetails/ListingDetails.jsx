@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import datas from '../../data/Data';
 import Header from '../../components/header/Header';
 import Footer from '../../components/footer/Footer';
-import ImageSlider from '../../components/imageslider/ImageSlider'; // Assurez-vous que le chemin est correct
+import ImageSlider from '../../components/imageslider/ImageSlider';
 import Collapse from '../../components/collapse/Collapse';
 import Tag from '../../components/tag/Tag';
 import Rating from '../../components/rating/Rating';
@@ -64,5 +64,6 @@ function ListingDetails() {
         </div>
     );
 }
+
 
 export default ListingDetails;

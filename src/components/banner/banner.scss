@@ -1,16 +1,13 @@
-
 .banner-about {
     height: 220px;
     width: 100%;
-    //max-width: 1240px;
     border-radius: 10px;
     color: #fff;
-    font-size: clamp(18px,5vw,48px);
+    font-size: clamp(18px, 3vw, 48px);
     font-weight: 500;
 
     img {
         height: 100%;
-        //max-width: 1240px;
         width: 100%;
         object-fit: cover;
         border-radius: 10px;
@@ -19,7 +16,7 @@
 
 .banner-accueil {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../assets/rocher.png");
@@ -28,13 +25,22 @@
     background-repeat: no-repeat;
     height: 220px;
     padding: 20px;
-    margin: 40px auto;
-    max-width: 1240px;
+    margin: 20px auto;
     border-radius: 10px;
+    width: 100%;
+    max-width: 1240px;
 
     h2 {
-    color: #fff;
-    font-size: clamp(18px,5vw,48px);
-    font-weight: 500;
+        color: #fff;
+        font-size: clamp(18px, 4vw, 48px);
+        font-weight: 500;
+    }
 }
+
+@media (min-width: 768px) {
+    .banner-accueil {
+        flex-direction: row;
+        margin: 40px auto;
+        
+    }
 }

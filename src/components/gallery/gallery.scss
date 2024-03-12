@@ -8,42 +8,6 @@
     background-color: #f7f7f7;
     padding: 25px;
     margin: 0 auto;
+    border-radius: 10px;
 }
 
-.gallery_card {
-    position: relative;
-    width: 390px;
-    height: 390px;
-    cursor: pointer;
-    overflow: hidden;
-}
-
-.gallery_card:hover img {
-    transform: scale(1.1);
-}
-
-
-.gallery_card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    transition: transform .3s ease, z-index 0s;
-    will-change: transform;
-}
-
-.gallery_card h3 {
-    z-index: 20;
-    position: absolute;
-    bottom: -18px;
-    left: -5px;
-    width: 100%;
-    white-space: nowrap;
-    padding: 10px;
-    font-weight: 500;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    font-size: clamp(14px,3vw,18px);
-    color: #fff;
-    background-color: #a61c33;
-}

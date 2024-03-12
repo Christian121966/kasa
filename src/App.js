@@ -13,7 +13,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Accueil />} />
         <Route path="/about" element={<About />} />
-        <Route path="/listing/:id" component={ListingDetails} />
+        <Route path="/ListingDetails/:id" element={<ListingDetails />} />
         <Route path='*' element={<NotFound />} />
       </Routes>
     </div>

@@ -1,1 +1,12 @@
-/*# sourceMappingURL=Gallery.css.map */
+.home_gallery {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 80px;
+  background-color: #f7f7f7;
+  padding: 25px;
+  margin: 0 auto;
+  border-radius: 10px;
+}/*# sourceMappingURL=Gallery.css.map */

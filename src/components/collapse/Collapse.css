@@ -3,7 +3,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(147deg, transparent 0%, transparent 8%, rgba(63, 106, 202, 0.08) 8%, rgba(63, 106, 202, 0.08) 46%, transparent 46%, transparent 100%), linear-gradient(107deg, transparent 0%, transparent 21%, rgba(63, 106, 202, 0.08) 21%, rgba(63, 106, 202, 0.08) 53%, transparent 53%, transparent 100%), linear-gradient(288deg, transparent 0%, transparent 35%, rgba(63, 106, 202, 0.08) 35%, rgba(46, 81, 157, 0.08) 91%, transparent 91%, transparent 100%), linear-gradient(90deg, #a61c33, #a61c33);
+  background-image: linear-gradient(147deg, transparent 0%, transparent 8%, rgba(63, 106, 202, 0.08) 8%, rgba(63, 106, 202, 0.08) 46%, transparent 46%, transparent 100%), linear-gradient(107deg, transparent 0%, transparent 21%, rgba(63, 106, 202, 0.08) 21%, rgba(63, 106, 202, 0.08) 53%, transparent 53%, transparent 100%), linear-gradient(288deg, transparent 0%, transparent 35%, rgba(63, 106, 202, 0.08) 35%, rgba(46, 81, 157, 0.08) 91%, transparent 91%, transparent 100%), linear-gradient(90deg, #fff, #fff);
   height: 220px;
   padding: 20px;
   margin: 40px auto;
@@ -28,7 +28,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: #a61c33;
+  background-color: #fff;
   color: #fff;
   font-weight: 500;
   font-size: clamp(16px, 2vw, 20px);
@@ -44,7 +44,7 @@
   height: auto;
   padding: 10px;
   letter-spacing: 1px;
-  color: #a61c33;
+  color: #fff;
   font-size: clamp(14px, 1.8vw, 18px);
   transition: visibility 0.5s ease-in-out, opacity 0.5s ease-in-out, height 0.2s ease-in-out;
 }
