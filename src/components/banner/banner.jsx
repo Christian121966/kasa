@@ -1,5 +1,4 @@
 
-
 import './Banner.scss';
 
 function Banner({isVisible = true, showimage = false}) {
