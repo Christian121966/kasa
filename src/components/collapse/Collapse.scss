@@ -19,6 +19,7 @@
     font-size: clamp(16px, 2vw, 20px);
     padding: 10px 15px;
     cursor: pointer;
+    position: relative;
   }
 
   &-content {
