@@ -41,9 +41,7 @@ return (
             ))}
         </main>
         <Footer />
-        <div className='about-footer'>
-            
-        </div>
+        
     </div>
     )
 }
