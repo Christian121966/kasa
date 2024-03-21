@@ -21,14 +21,14 @@
 }
 
 .collapse {
-  background-color: #f7f7f7;
+  background-color: #FF6060;
+  border-radius: 5px;
 }
 .collapse-title {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: #fff;
   color: #fff;
   font-weight: 500;
   font-size: clamp(16px, 2vw, 20px);
@@ -39,14 +39,15 @@
   display: flex;
   flex-direction: column;
   gap: 5px;
-  visibility: visible;
-  opacity: 1;
   height: auto;
   padding: 10px;
   letter-spacing: 1px;
   color: #fff;
   font-size: clamp(14px, 1.8vw, 18px);
-  transition: visibility 0.5s ease-in-out, opacity 0.5s ease-in-out, height 0.2s ease-in-out;
+}
+.collapse-content p {
+  color: #FF6060;
+  background-color: #fff;
 }
 
 .arrow {

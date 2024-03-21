@@ -1,5 +1,6 @@
-import React, { useEffect, useState } from 'react';
+//import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import './ListingDetails.scss';
 import datas from '../../data/Data';
 import Header from '../../components/header/Header';
 import Footer from '../../components/footer/Footer';
@@ -10,15 +11,8 @@ import Rating from '../../components/rating/Rating';
 import NotFound from '../notFound/NotFound';
 
 function ListingDetails() {
-    const [imageSlider, setImageSlider] = useState([]);
     const { id } = useParams();
     const apartment = datas.find(appt => appt.id === id);
-
-    useEffect(() => {
-        if (apartment && apartment.pictures) {
-            setImageSlider(apartment.pictures);
-        }
-    }, [id, apartment]);
 
     if (!apartment) {
         return <NotFound />;
@@ -29,26 +23,25 @@ function ListingDetails() {
     return (
         <div className='ListingDetails_wrapper'>
             <Header />
-            <ImageSlider imageSlider={imageSlider} />
+            <ImageSlider images={apartment.pictures} />
             <main className="ListingDetails">
                 <div className="ListingDetails-content">
                     <div className="ListingDetails-content-infos">
                         <h1>{apartment.title}</h1>
                         <p>{apartment.location}</p>
-                        <div>
+                        <div className="ville">
                             {apartment.tags.map((tag, index) => 
                                 <Tag key={index} tag={tag}/>
                             )}
                         </div>
                     </div>
                     <div className="ListingDetails-content-hote">
-                        <div>
+                        
                             <div className='ListingDetails-content-hote-name'>
-                                <span>{nameParts[0]}</span>
-                                <span>{nameParts.length > 1 ? nameParts[1] : ''}</span>
+                            <img src={apartment.host.picture} alt="hôte de cet appartement" className="imgHote" />
+                                <span className='firstName'>{nameParts[0]}</span>
+                                <span className='lastName'>{nameParts.length > 1 ? nameParts[1] : ''}</span>
                             </div>
-                            <img src={apartment.host.picture} alt="hôte de cet appartement" />
-                        </div>
 
                         <div className="ListingDetails-content-host-stars">
                             <Rating rating={apartment.rating} />

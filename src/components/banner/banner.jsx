@@ -1,6 +1,6 @@
 
 
-import './Banner.scss';
+import './banner.scss';
 
 function Banner({isVisible = true, showimage = false}) {
     return (

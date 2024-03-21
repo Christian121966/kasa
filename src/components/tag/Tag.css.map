@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"Tag.css"}
+{"version":3,"sources":["Tag.scss","../../sass/utils/variables.scss","Tag.css"],"names":[],"mappings":"AAGI;EACI,YAAA;EACA,mBAAA;EACA,yBCOY;EDNZ,WCES;ACJjB","file":"Tag.css"}

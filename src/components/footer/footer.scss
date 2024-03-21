@@ -5,7 +5,22 @@
     align-items: center;
     gap: 20px;
     width: 100%;
+    max-width: 1240px;
     padding: 20px 0;
     background-color: #000;
     font-size: clamp(14px,2vw,20px);
+    position: absolute;
+    overflow: hidden;
+
+    .logoFooter {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mentions {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }

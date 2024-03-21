@@ -1,15 +1,13 @@
 @import '../../sass/utils/variables';
  
 .about{
-    display: flex;
-    flex-direction: column;
     min-height: calc(100vh - 40px);
 }
 
 .about-main {
   width: $main-width;
   margin: $main-margin;
-  flex-grow: 1;
+  
 
   &_collapse {
     margin: $collapse-margin;

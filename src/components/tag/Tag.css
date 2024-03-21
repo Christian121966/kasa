@@ -1,1 +1,6 @@
-/*# sourceMappingURL=Tag.css.map */
+.tag p {
+  width: 100px;
+  border-radius: 50px;
+  background-color: #FF6060;
+  color: #fff;
+}/*# sourceMappingURL=Tag.css.map */

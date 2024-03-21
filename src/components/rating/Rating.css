@@ -1,1 +1,13 @@
-/*# sourceMappingURL=Rating.css.map */
+.rating-container {
+  display: flex;
+  align-items: center;
+  width: 196px;
+  height: 36px;
+}
+.rating-container img.star {
+  width: 1px;
+  margin-right: 4px;
+}
+.rating-container img.star:last-child {
+  margin-right: 0;
+}/*# sourceMappingURL=Rating.css.map */

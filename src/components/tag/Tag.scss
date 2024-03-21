@@ -1,0 +1,11 @@
+@import '../../sass/utils/variables.scss';
+
+.tag{
+    p{
+        width: 100px;
+        border-radius: 50px;
+        background-color: $color-background;
+        color: $color-primary;
+    };
+
+}

@@ -1,1 +1,23 @@
-/*# sourceMappingURL=ImageSlider.css.map */
+.imageSlider {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.imageSlider .imageSlide {
+  width: 100%;
+  max-width: 1240px;
+  height: 415px;
+  border-radius: 25px;
+}
+.imageSlider .imageSlider_arrow {
+  position: absolute;
+  top: 150px;
+}
+.imageSlider .imageSlider_arrow.left {
+  left: 100px;
+  cursor: pointer;
+}
+.imageSlider .imageSlider_arrow.right {
+  right: 100px;
+  cursor: pointer;
+}/*# sourceMappingURL=ImageSlider.css.map */

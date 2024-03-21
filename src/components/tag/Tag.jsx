@@ -1,9 +1,10 @@
 import React from "react";
+import "./Tag.scss";
 
-function Tag() {
+function Tag({tag}) {
     return (
-        <div>
-            <p>tag element</p>
+        <div className="tag">
+            <p>{tag}</p>
         </div>
     )
 }

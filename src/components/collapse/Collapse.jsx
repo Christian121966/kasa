@@ -18,8 +18,8 @@ function Collapse({title, content}) {
             {isOpen && (
           <div className={isOpen ? "collapse-content" : "collapse-content-hidden"}>
             {Array.isArray(content) ? content.map((item, index) => (
-              <p key={index}>{item}</p>
-            )) : <p>{content}</p>}
+               <p key={index}>{item}</p>
+               )) : <p>{content}</p>}
           </div>
         )}
         </div>

@@ -5,7 +5,20 @@
   align-items: center;
   gap: 20px;
   width: 100%;
+  max-width: 1240px;
   padding: 20px 0;
   background-color: #000;
   font-size: clamp(14px, 2vw, 20px);
-}/*# sourceMappingURL=Footer.css.map */
+  position: absolute;
+  overflow: hidden;
+}
+.footer .logoFooter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .mentions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=footer.css.map */

@@ -1,0 +1,29 @@
+.imageSlider{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    .imageSlide{
+        width: 100%;
+        max-width: 1240px;
+        height: 415px;
+        border-radius: 25px;
+    
+    }
+    .imageSlider_arrow{
+        position: absolute;
+        top: 150px;
+        &.left{
+            left: 100px;
+            cursor: pointer;
+        }
+        &.right{
+            right: 100px;
+            cursor: pointer;
+        }
+    }
+
+    
+
+    
+
+}

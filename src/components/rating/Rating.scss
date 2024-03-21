@@ -1,0 +1,15 @@
+.rating-container {
+    display: flex;
+    align-items: center;
+    width: 196px;
+    height: 36px;
+  
+    img.star {
+      width: 1px; // Taille des étoiles
+      margin-right: 4px; // Espacement entre les étoiles
+  
+      &:last-child {
+        margin-right: 0; // Pas d'espacement après la dernière étoile
+      }
+    }
+  }

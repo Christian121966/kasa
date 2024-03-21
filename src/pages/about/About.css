@@ -1,13 +1,10 @@
 .about {
-  display: flex;
-  flex-direction: column;
   min-height: calc(100vh - 40px);
 }
 
 .about-main {
   width: 95%;
   margin: 0 auto;
-  flex-grow: 1;
 }
 .about-main_collapse {
   margin: 40px auto;
