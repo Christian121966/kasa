@@ -43,14 +43,14 @@ function ListingDetails() {
                                 <span className='lastName'>{nameParts.length > 1 ? nameParts[1] : ''}</span>
                             </div>
 
-                        <div className="ListingDetails-content-host-stars">
+                        <div className="ListingDetails-content-hote-stars">
                             <Rating rating={apartment.rating} />
                         </div>
                     </div>
                 </div>
                 <div className="ListingDetails-collapse">
                     <Collapse title={'Description'} content={apartment.description}/>
-                    <Collapse title={'Équipements'} content={apartment.equipments.join(', ')}/>
+                    <Collapse title={'Équipements'} content={apartment.equipments}/>
                 </div>
             </main>
             <Footer />

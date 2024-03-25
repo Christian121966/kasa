@@ -19,7 +19,22 @@
 
 .collapse-container {
   padding: 0 15px;
-  margin: 40px auto;
+  margin: 80px auto;
+  width: 1240px;
+  height: 52px;
+  border-radius: 10px;
+  position: relative;
+  left: -140px;
+
+  &.équipements {
+    position: relative;
+    left: 5px;
+  }
+
+  &.description {
+    position: relative;
+    left: -5px;
+  }
 }
 
 .collapse {
@@ -44,15 +59,19 @@
     //visibility: visible;
     //opacity: 1;
     height: auto;
-    padding: 10px;
+    //padding: 10px;
     letter-spacing: 1px;
     color: $color-primary;
     font-size: clamp(14px, 1.8vw, 18px);
+    text-align: left;
+    color: #000;
+    margin-left: 20px;
     //transition: visibility .5s ease-in-out, opacity .5s ease-in-out, height .2s ease-in-out;
 
     p {
-      color: #FF6060;
+      color: #000;
       background-color: #fff;
+      text-align: left;
     }
   }
 }
@@ -64,3 +83,4 @@
     transform: scale(2.0); // Agrandit l'icône de 20% au survol
   }
 }
+
