@@ -1,95 +1,166 @@
-.ListingDetails_wrapper {
-    width: 100%;
-    max-width: 1240px;
-    margin: auto;
+
+$breakpoint-mobile: 480px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;
+
+@mixin for-tablet-up {
+  @media (min-width: $breakpoint-tablet) {
+    @content;
+  }
+}
+
+@mixin for-desktop-up {
+  @media (min-width: $breakpoint-desktop) {
+    @content;
+  }
+}
+
+ListingDetailsWrapper {
+  width: 100%;
+  max-width: 1240px;
+  margin: auto;
 }
 
 main.ListingDetails {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+  
+  @include for-tablet-up {
     max-width: 1240px;
     margin: auto;
-    overflow: hidden;
     height: 439px;
+  }
+}
 
+.ListingDetailsContent {
+  width: 100%;
+  position: relative;
+  padding: 20px;
+  height: 261px;
+}
 
-    .ListingDetails-content {
-        width: 100%;
-        position: relative;
-        padding: 20px;
+.ListingDetailsContentInfos {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
 
-        &-infos {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 10px;
+  h1 {
+    margin: 0;
+    color: #FF6060;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 51.34px;
+    //width: 635px;
+    height: 51px;
+  }
 
-            h1, p, .ville {
-                margin: 0;
-            }
+  p {
+    margin: 0;
+  }
+}
 
-            .ville {
-                display: flex;
-                gap: 10px;
-            }
-        }
+.ListingDetailsContentVille {
+  display: flex;
+  //gap: 10px;
+  width: 365px;
+  height: 25px;
 
-        &-hote {
-            display: flex;
-            justify-content: flex-end;
-            margin-top: 20px;
-            transform: translate(310px, -110px);
+  .tag {
+    width: 115px;
+    font-size: 14px;
+    font-weight: 500;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    white-space: nowrap;
+    gap: 10px;
+  }
+}
 
+.ListingDetailsContentHote {
+    justify-content: flex-end;
+    margin-top: 20px;
+    display: grid;
+    width: 100%;
 
-            &-name {
-                display: flex;
-                align-items: center;
-                gap: 10px;
+  @include for-tablet-up {
+      transform: translate(0, 0);
+    }
 
-                .imgHote {
-                    border-radius: 50%;
-                    width: 64px;
-                    height: 64px;
-                }
-            }
+    .ImgHote {
+      border-radius: 50%;
+      width: 64px;
+      height: 64px;
+      transform: translate(85px, -125px);
+    }
 
-        .ListingDetails-content-hote-stars {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-            left: -300px;
-            top: 70px;
-
-            .rating-container {
-                transform: translate(80px, -18px);
-            }
-
-        }
+    .hoteName {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      position: relative;
+      top: -185px;
+      left: 25px;
     }
 }
 
-    .ListingDetails-collapse {
-        display: flex;
-        width: 100%;
+
+
+ListingDetailsContentHoteStars {
+  /*display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: -300px;
+  top: 70px;*/
+  
+
+  @include for-tablet-up {
+    left: 0;
+    top: 0;
+  }
+}
+
+.ListingDetailsCollapse {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 76px;
+  height: 252px;
+
+  @include for-tablet-up {
+    flex-direction: row;
+    margin-bottom: 125px;
+    //transition: height 0.3s ease;
+  }
+
+    .collapse-container {
+      width: 100%;
+    }
+
+    .collapse-container {
+      @include for-tablet-up {
+        flex-direction: row;
+        width: 582px;
+        height: 52px;
+        flex-direction: row;
+        gap: 76px;
         max-width: 1240px;
-        position: absolute;
-        top: 780px;
-
-        .collapse.description {
-            width: 582px;
-            height: 52px;
-            position: relative;
-            left: -5px;
         }
+      }
 
-        .collapse.équipements {
-            width: 582px;
-            height: 52px;
-            position: relative;
-            left: 10px;
-        }
-    }
-}
+      
+  }
+  
+  
+  
+  
+
+
+

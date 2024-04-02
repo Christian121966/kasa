@@ -26,13 +26,12 @@
         align-items: center;
         font-family: Montserrat;
         font-style: normal;
-        font-size: 18px;
         text-decoration: none;
         color: #000;
         margin-left: 20px;
   
         &:hover {
-          color: #FD6060;
+          color: #000;
           text-decoration: underline;
         }
   
@@ -40,7 +39,7 @@
           color: #000;
   
           &:hover {
-            color: #FD6060;
+            color: #000;
             text-decoration: underline;
           }
         }

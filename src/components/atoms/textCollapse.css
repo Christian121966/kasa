@@ -1,0 +1,29 @@
+.collapse-content {
+  background-color: #FFF;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  visibility: visible;
+  opacity: 1;
+  height: auto;
+  padding: 20px;
+  letter-spacing: 1px;
+  color: #000;
+  font-size: clamp(14px, 1.8vw, 18px);
+  text-align: left;
+  transition: visibility 0.5s ease-in-out, opacity 0.5s ease-in-out, height 0.2s ease-in-out;
+  /*&-hidden {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease;
+  }*/
+}
+.collapse-content ul {
+  background-color: #FFF;
+  text-indent: 20px;
+}
+.collapse-content p {
+  color: #000;
+  background-color: #fff;
+  text-align: left;
+}/*# sourceMappingURL=textCollapse.css.map */

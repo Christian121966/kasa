@@ -6,81 +6,51 @@
   justify-content: center;
   align-items: center;
   background-image: linear-gradient(147deg, transparent 0%, transparent 8%, $color-accent 8%, $color-accent 46%, transparent 46%, transparent 100%), linear-gradient(107deg, transparent 0%, transparent 21%, $color-accent 21%, $color-accent 53%, transparent 53%, transparent 100%), linear-gradient(288deg, transparent 0%, transparent 35%, $color-accent 35%, $color-accent-dark 91%, transparent 91%, transparent 100%), linear-gradient(90deg, $color-primary, $color-primary);
-  height: 220px;
-  padding: 20px;
-  margin: 40px auto;
   width: 100%;
 }
 
-.about_main {
-  flex-grow: 1;
-  margin-bottom: 40px;
-}
+
 
 .collapse-container {
   padding: 0 15px;
-  margin: 80px auto;
-  width: 1240px;
-  height: 52px;
   border-radius: 10px;
-  position: relative;
-  left: -140px;
+  transition: height 0.3s ease;
 
-  &.équipements {
+  /*&.équipements {
     position: relative;
-    left: 5px;
   }
 
   &.description {
     position: relative;
-    left: -5px;
-  }
+  }*/
 }
 
 .collapse {
   background-color: $color-background;
   border-radius: 5px;
+
   &-title {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     color: #fff;
-    font-weight: 500;
+    font-weight: 700;
     font-size: clamp(16px, 2vw, 20px);
     padding: 10px 15px;
     cursor: pointer;
-  }
-
-  &-content {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    //visibility: visible;
-    //opacity: 1;
-    height: auto;
-    //padding: 10px;
-    letter-spacing: 1px;
-    color: $color-primary;
-    font-size: clamp(14px, 1.8vw, 18px);
-    text-align: left;
-    color: #000;
-    margin-left: 20px;
-    //transition: visibility .5s ease-in-out, opacity .5s ease-in-out, height .2s ease-in-out;
-
-    p {
-      color: #000;
-      background-color: #fff;
-      text-align: left;
-    }
+    //font-family: Montserrat;
   }
 }
 
 .arrow {
   transition: all .2s ease-in-out;
+  transform: rotate(180deg);
 
-  &:hover {
-    transform: scale(2.0); // Agrandit l'icône de 20% au survol
-  }
+  //&:hover {
+    //transform: scale(2.0); // Agrandit l'icône de 20% au survol
+  //}
 }
+
+
 

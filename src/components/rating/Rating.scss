@@ -3,10 +3,13 @@
     align-items: center;
     width: 196px;
     height: 36px;
-  
-    .star {
-      width: 20px;
-      height: 20px;
-      margin-right: 4px;
+    position: relative;
+    left: 25px;
+    top: -160px;
+
+    img.star{
+      width: 36px;
+      height: 36px;
     }
+
   }

@@ -11,13 +11,14 @@
     }
     .imageSlider_arrow{
         position: absolute;
-        top: 150px;
+        top: 175px;
+        width: 46.68px;
         &.left{
-            left: 100px;
+            left: 0px;
             cursor: pointer;
         }
         &.right{
-            right: 100px;
+            right: 0px;
             cursor: pointer;
         }
     }

@@ -1,1 +1,36 @@
-/*# sourceMappingURL=NotFound.css.map */
+.NotFound {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.NotFound h1.error {
+  font-size: 288px;
+  font-weight: 700;
+  color: #FF6060;
+  width: 597px;
+  height: 263px;
+  line-height: 410.69px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.NotFound p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 51px;
+  margin-top: 50px;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 51.34px;
+  color: #FF6060;
+}
+.NotFound h5 {
+  width: 284px;
+  height: 26px;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 100px;
+  text-decoration: underline;
+}/*# sourceMappingURL=NotFound.css.map */

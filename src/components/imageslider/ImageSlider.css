@@ -11,13 +11,14 @@
 }
 .imageSlider .imageSlider_arrow {
   position: absolute;
-  top: 150px;
+  top: 175px;
+  width: 46.68px;
 }
 .imageSlider .imageSlider_arrow.left {
-  left: 100px;
+  left: 0px;
   cursor: pointer;
 }
 .imageSlider .imageSlider_arrow.right {
-  right: 100px;
+  right: 0px;
   cursor: pointer;
 }/*# sourceMappingURL=ImageSlider.css.map */

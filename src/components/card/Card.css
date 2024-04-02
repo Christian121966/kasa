@@ -3,6 +3,7 @@
   height: 340px;
   overflow: hidden;
   position: relative;
+  border-radius: 10px;
 }
 .gallery_card img {
   width: 100%;

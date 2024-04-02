@@ -37,7 +37,7 @@ return (
         <Banner isVisible={true} showimage={true} />
         <main className='about-main'>
             {aboutDatas.map(data => (
-        <Collapse key={data.id} title={data.title} content={data.content} />
+                <Collapse key={data.id} title={data.title} content={data.content} />
             ))}
         </main>
         <Footer />

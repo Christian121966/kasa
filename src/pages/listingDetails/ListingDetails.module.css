@@ -4,7 +4,7 @@ ListingDetailsWrapper {
   margin: auto;
 }
 
-main.ListingDetails {
+ListingDetails {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,87 +12,74 @@ main.ListingDetails {
   overflow: hidden;
 }
 @media (min-width: 768px) {
-  main.ListingDetails {
+  ListingDetails {
     max-width: 1240px;
     margin: auto;
     height: 439px;
   }
 }
 
-.ListingDetailsContent {
+ListingDetailsContent {
   width: 100%;
   position: relative;
   padding: 20px;
-  height: 261px;
 }
 
-.ListingDetailsContentInfos {
+ListingDetailsContentInfos {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 10px;
 }
-.ListingDetailsContentInfos h1 {
-  margin: 0;
-  color: #FF6060;
-  font-size: 36px;
-  font-weight: 500;
-  line-height: 51.34px;
-  height: 51px;
-}
-.ListingDetailsContentInfos p {
+
+ListingDetailsContentVille,
+ListingDetailsContentInfos h1,
+ListingDetailsContentInfos p {
   margin: 0;
 }
 
-.ListingDetailsContentVille {
+ListingDetailsContentVille {
   display: flex;
-  width: 365px;
-  height: 25px;
-}
-.ListingDetailsContentVille .tag {
+  gap: 10px;
   width: 115px;
   font-size: 14px;
   font-weight: 500;
   align-items: center;
-  display: flex;
   text-align: center;
   white-space: nowrap;
-  gap: 10px;
 }
 
-.ListingDetailsContentHote {
+ListingDetailsContentHote {
+  display: flex;
   justify-content: flex-end;
   margin-top: 20px;
-  display: grid;
-  width: 100%;
+  transform: translate(310px, -110px);
 }
 @media (min-width: 768px) {
-  .ListingDetailsContentHote {
+  ListingDetailsContentHote {
     transform: translate(0, 0);
   }
 }
-.ListingDetailsContentHote .ImgHote {
+
+ListingDetailsContentHoteName {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+ImgHote {
   border-radius: 50%;
   width: 64px;
   height: 64px;
-  transform: translate(85px, -125px);
-}
-.ListingDetailsContentHote .hoteName {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  position: relative;
-  top: -185px;
-  left: 25px;
 }
 
 ListingDetailsContentHoteStars {
-  /*display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
   left: -300px;
-  top: 70px;*/
+  top: 70px;
 }
 @media (min-width: 768px) {
   ListingDetailsContentHoteStars {
@@ -101,31 +88,30 @@ ListingDetailsContentHoteStars {
   }
 }
 
-.ListingDetailsCollapse {
+ListingDetailsCollapse {
   display: flex;
   flex-direction: column;
   width: 100%;
   justify-content: center;
   align-items: center;
-  gap: 76px;
-  height: 252px;
+  gap: 20px;
 }
 @media (min-width: 768px) {
-  .ListingDetailsCollapse {
-    flex-direction: row;
-    margin-bottom: 125px;
-  }
-}
-.ListingDetailsCollapse .collapse-container {
-  width: 100%;
-}
-@media (min-width: 768px) {
-  .ListingDetailsCollapse .collapse-container {
-    flex-direction: row;
-    width: 582px;
-    height: 52px;
+  ListingDetailsCollapse {
     flex-direction: row;
     gap: 76px;
     max-width: 1240px;
   }
-}/*# sourceMappingURL=ListingDetails.css.map */
+}
+
+CollapseContainerCollapse,
+CollapseEquipments {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  CollapseContainerCollapse,
+  CollapseEquipments {
+    width: 582px;
+    height: 52px;
+  }
+}/*# sourceMappingURL=ListingDetails.module.css.map */
