@@ -1,15 +1,38 @@
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;
+
+@mixin for-tablet-up {
+  @media (min-width: $breakpoint-tablet) {
+    @content;
+  }
+}
+
+@mixin for-desktop-up {
+  @media (min-width: $breakpoint-desktop) {
+    @content;
+  }
+}
+
 .home_gallery {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 80px;
+    gap: 27px; 
     background-color: #f7f7f7;
-    padding: 25px;
+    padding: 20px 0px 0px 0px; 
     margin: 0 auto;
     border-radius: 10px;
     width: 100%;
-    max-width: 1240px;
+    max-width: 375px; 
+    height: auto;
+    margin-bottom: 27px; 
+
+    @include for-tablet-up {
+        gap: 80px; 
+        padding: 25px; 
+        max-width: 1240px; 
+    }
 }
 

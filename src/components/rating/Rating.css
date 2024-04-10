@@ -4,10 +4,16 @@
   width: 196px;
   height: 36px;
   position: relative;
-  left: 25px;
-  top: -160px;
+  left: -180px;
+  top: -70px;
 }
 .rating-container img.star {
-  width: 36px;
-  height: 36px;
+  width: 18px;
+  height: 18px;
+}
+@media (min-width: 768px) {
+  .rating-container img.star {
+    width: 36px;
+    height: 36px;
+  }
 }/*# sourceMappingURL=Rating.css.map */

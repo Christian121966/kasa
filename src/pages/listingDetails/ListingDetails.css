@@ -1,4 +1,4 @@
-ListingDetailsWrapper {
+.ListingDetailsWrapper {
   width: 100%;
   max-width: 1240px;
   margin: auto;
@@ -10,12 +10,7 @@ main.ListingDetails {
   align-items: center;
   width: 100%;
   overflow: hidden;
-}
-@media (min-width: 768px) {
-  main.ListingDetails {
-    max-width: 1240px;
-    margin: auto;
-  }
+  margin-bottom: 25px;
 }
 
 .ListingDetailsContent {
@@ -34,29 +29,31 @@ main.ListingDetails {
 .ListingDetailsContentInfos h1 {
   margin: 0;
   color: #FF6060;
-  font-size: 36px;
+  font-size: 18px;
   font-weight: 500;
   line-height: 51.34px;
   height: 51px;
 }
 .ListingDetailsContentInfos p {
   margin: 0;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 25.67px;
 }
 
 .ListingDetailsContentVille {
   display: flex;
   width: 365px;
   height: 25px;
+  gap: 10px;
 }
 .ListingDetailsContentVille .tag {
-  width: 115px;
-  font-size: 14px;
-  font-weight: 500;
+  width: 84px;
+  height: 18px;
   align-items: center;
   display: flex;
   text-align: center;
   white-space: nowrap;
-  gap: 10px;
 }
 
 .ListingDetailsContentHote {
@@ -65,39 +62,25 @@ main.ListingDetails {
   display: grid;
   width: 100%;
 }
-@media (min-width: 768px) {
-  .ListingDetailsContentHote {
-    transform: translate(0, 0);
-  }
-}
 .ListingDetailsContentHote .ImgHote {
   border-radius: 50%;
-  width: 64px;
-  height: 64px;
-  transform: translate(85px, -125px);
+  width: 32px;
+  height: 32px;
+  transform: translate(85px, 5px);
 }
 .ListingDetailsContentHote .hoteName {
   display: flex;
   flex-direction: column;
   gap: 10px;
   position: relative;
-  top: -185px;
-  left: 25px;
+  top: -35px;
+  left: 40px;
 }
-
-ListingDetailsContentHoteStars {
-  /*display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  left: -300px;
-  top: 70px;*/
+.ListingDetailsContentHote .hoteName .firstName {
+  font-size: 12px;
 }
-@media (min-width: 768px) {
-  ListingDetailsContentHoteStars {
-    left: 0;
-    top: 0;
-  }
+.ListingDetailsContentHote .hoteName .lastName {
+  font-size: 12px;
 }
 
 .ListingDetailsCollapse {
@@ -107,21 +90,85 @@ ListingDetailsContentHoteStars {
   justify-content: center;
   gap: 76px;
 }
+.ListingDetailsCollapse .collapse-container {
+  width: 100%;
+}
+
 @media (min-width: 768px) {
+  main.ListingDetails {
+    max-width: 1240px;
+    margin: auto;
+  }
+  .ListingDetailsContentHote {
+    transform: translate(0px, -120px);
+  }
+  .ListingDetailsContentHote .ListingDetailsContentHoteName {
+    transform: translate(-5px, 5px);
+  }
+  .ListingDetailsContentHote .ListingDetailsContentHoteName .ImgHote {
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+  }
+  .ListingDetailsContentHote .ListingDetailsContentHoteName .hoteName {
+    top: -55px;
+    left: 5px;
+  }
+  .ListingDetailsContentHote .ListingDetailsContentHoteName .hoteName .firstName {
+    font-size: 18px;
+  }
+  .ListingDetailsContentHote .ListingDetailsContentHoteName .hoteName .lastName {
+    font-size: 18px;
+  }
+  .ListingDetailsContentHoteStars {
+    left: 15px;
+    top: -10px;
+    position: relative;
+  }
+  .ListingDetailsContentHoteStars .rating-container {
+    align-items: center;
+    width: 196px;
+    height: 36px;
+    position: relative;
+    top: 0px;
+    left: 5px;
+  }
+  .ListingDetailsContentInfos h1 {
+    margin: 0;
+    color: #FF6060;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 51.34px;
+    height: 51px;
+  }
+  .ListingDetailsContentInfos p {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25.62px;
+  }
+  .ListingDetailsContentVille {
+    display: flex;
+    width: 365px;
+    height: 25px;
+    gap: 10px;
+  }
+  .ListingDetailsContentVille .tag {
+    width: 115px;
+    height: 25px;
+  }
+  .ListingDetailsContentVille .tag p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 19.96px;
+  }
   .ListingDetailsCollapse {
     flex-direction: row;
     margin-bottom: 20px;
   }
-}
-.ListingDetailsCollapse .collapse-container {
-  width: 100%;
-}
-@media (min-width: 768px) {
   .ListingDetailsCollapse .collapse-container {
-    flex-direction: row;
     width: 582px;
-    flex-direction: row;
-    gap: 76px;
     max-width: 1240px;
   }
 }/*# sourceMappingURL=ListingDetails.css.map */

@@ -1,3 +1,20 @@
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;
+
+
+@mixin for-tablet-up {
+  @media (min-width: $breakpoint-tablet) {
+    @content;
+  }
+}
+
+@mixin for-desktop-up {
+  @media (min-width: $breakpoint-desktop) {
+    @content;
+  }
+}
+
+
 @import '../../sass/utils/variables.scss';
 
 .banner {
@@ -9,20 +26,10 @@
   width: 100%;
 }
 
-
-
 .collapse-container {
   padding: 0 15px;
   border-radius: 10px;
   transition: height 0.3s ease;
-
-  /*&.équipements {
-    position: relative;
-  }
-
-  &.description {
-    position: relative;
-  }*/
 }
 
 .collapse {
@@ -39,7 +46,16 @@
     font-size: clamp(16px, 2vw, 20px);
     padding: 10px 15px;
     cursor: pointer;
-    //font-family: Montserrat;
+
+
+    @include for-tablet-up {
+      font-size: 18px; 
+    }
+  }
+
+  
+  @include for-desktop-up {
+    padding: 20px; 
   }
 }
 
@@ -47,10 +63,8 @@
   transition: all .2s ease-in-out;
   transform: rotate(180deg);
 
-  //&:hover {
-    //transform: scale(2.0); // Agrandit l'icône de 20% au survol
-  //}
+  
+  @include for-tablet-up {
+    transform: rotate(0deg); 
+  }
 }
-
-
-

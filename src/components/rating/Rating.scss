@@ -1,15 +1,38 @@
+$breakpoint-mobile: 480px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;
+
+@mixin for-tablet-up {
+  @media (min-width: $breakpoint-tablet) {
+    @content;
+  }
+}
+
+@mixin for-desktop-up {
+  @media (min-width: $breakpoint-desktop) {
+    @content;
+  }
+}
+
 .rating-container {
     display: flex;
     align-items: center;
     width: 196px;
     height: 36px;
     position: relative;
-    left: 25px;
-    top: -160px;
+    left: -180px; 
+    top: -70px; 
 
-    img.star{
-      width: 36px;
-      height: 36px;
+    img.star {
+      width: 18px; 
+      height: 18px; 
     }
 
-  }
+    @include for-tablet-up {
+
+        img.star {
+            width: 36px; 
+            height: 36px; 
+        }
+      }
+}

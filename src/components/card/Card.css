@@ -1,6 +1,6 @@
 .gallery_card {
-  width: 340px;
-  height: 340px;
+  width: 335px;
+  height: 225px;
   overflow: hidden;
   position: relative;
   border-radius: 10px;
@@ -22,4 +22,11 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  padding-left: 10px;
+}
+@media (min-width: 768px) {
+  .gallery_card {
+    width: 340px;
+    height: 340px;
+  }
 }/*# sourceMappingURL=Card.css.map */
