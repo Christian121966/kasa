@@ -25,7 +25,7 @@ function ImageSlider({ images }) {
 
     return (
         <section className='imageSlider'>
-                    <img className="imageSlide" src={currentImage} />
+                    <img className="imageSlide" src={currentImage} alt='' />
                     <img 
                         className='imageSlider_arrow left' 
                         src={ArrowRight} 
@@ -41,5 +41,6 @@ function ImageSlider({ images }) {
         </section>
     );
 }
+
 
 export default ImageSlider;

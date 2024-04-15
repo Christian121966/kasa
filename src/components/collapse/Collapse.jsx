@@ -22,4 +22,5 @@ function Collapse({ title, content }) {
   );
 }
 
+
 export default Collapse;
