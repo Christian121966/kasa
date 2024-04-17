@@ -1,3 +1,20 @@
+$breakpoint-mobile: 480px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;
+
+@mixin for-tablet-up {
+  @media (min-width: $breakpoint-tablet) {
+    @content;
+  }
+}
+
+@mixin for-desktop-up {
+  @media (min-width: $breakpoint-desktop) {
+    @content;
+  }
+}
+
+
 .navbar {
     width: 100%;
     display: flex;
@@ -20,6 +37,13 @@
       flex-direction: row;
       margin-left: auto;
       padding: 0;
+
+      @include for-tablet-up {
+        width: 309px;
+        height: 34px;
+        gap: 57px;
+      }
+    
   
       a {
         display: flex;
@@ -29,6 +53,9 @@
         text-decoration: none;
         color: #000;
         margin-left: 20px;
+        font-size: 12px;
+        height: 17px;
+        width: 66px;
   
         &:hover {
           color: #000;
@@ -50,5 +77,8 @@
   @media (min-width: 768px) {
     .navbar .navbar-links a {
       font-size: 24px;
+      gap: 57px;
+      width: 116px;
+      margin-left: 0;
     }
   }

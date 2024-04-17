@@ -20,6 +20,13 @@
   margin-left: auto;
   padding: 0;
 }
+@media (min-width: 768px) {
+  .navbar .navbar-links {
+    width: 309px;
+    height: 34px;
+    gap: 57px;
+  }
+}
 .navbar .navbar-links a {
   display: flex;
   align-items: center;
@@ -28,6 +35,9 @@
   text-decoration: none;
   color: #000;
   margin-left: 20px;
+  font-size: 12px;
+  height: 17px;
+  width: 66px;
 }
 .navbar .navbar-links a:hover {
   color: #000;
@@ -44,5 +54,8 @@
 @media (min-width: 768px) {
   .navbar .navbar-links a {
     font-size: 24px;
+    gap: 57px;
+    width: 116px;
+    margin-left: 0;
   }
 }/*# sourceMappingURL=Navbar.css.map */
